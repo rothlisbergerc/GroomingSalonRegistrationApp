@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GroomingSalonRegistrationApp
 {
-    class Pet
+    public class Pet
     {
         public int PetId { get; set; }
 
