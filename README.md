@@ -10,7 +10,7 @@ This application will register new customers and their pets into a grooming salo
 - Pet's Age
 
 ### Coding Style Guidelines
--
+-[Coding guidelines we are using](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
 
 ### Authors
 - Ryder Deback
