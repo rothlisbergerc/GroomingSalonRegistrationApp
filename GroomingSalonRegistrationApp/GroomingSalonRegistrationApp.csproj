@@ -92,6 +92,12 @@
     <Compile Include="UpdateCustomerForm.Designer.cs">
       <DependentUpon>UpdateCustomerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdatePetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePetForm.Designer.cs">
+      <DependentUpon>UpdatePetForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddCustomerForm.resx">
       <DependentUpon>AddCustomerForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +121,9 @@
     </Compile>
     <EmbeddedResource Include="UpdateCustomerForm.resx">
       <DependentUpon>UpdateCustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePetForm.resx">
+      <DependentUpon>UpdatePetForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
