@@ -31,10 +31,10 @@ namespace GroomingSalonRegistrationApp
         {
             this.updateCustSubmitBtn = new System.Windows.Forms.Button();
             this.updateCustCancelBtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.updateFirstNameLabel = new System.Windows.Forms.Label();
+            this.updateLastNameLabel = new System.Windows.Forms.Label();
+            this.updatePhoneLabel = new System.Windows.Forms.Label();
+            this.updateAddressLabel = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -43,7 +43,7 @@ namespace GroomingSalonRegistrationApp
             // 
             // updateCustSubmitBtn
             // 
-            this.updateCustSubmitBtn.Location = new System.Drawing.Point(155, 139);
+            this.updateCustSubmitBtn.Location = new System.Drawing.Point(136, 139);
             this.updateCustSubmitBtn.Name = "updateCustSubmitBtn";
             this.updateCustSubmitBtn.Size = new System.Drawing.Size(105, 32);
             this.updateCustSubmitBtn.TabIndex = 0;
@@ -52,73 +52,73 @@ namespace GroomingSalonRegistrationApp
             // 
             // updateCustCancelBtn
             // 
-            this.updateCustCancelBtn.Location = new System.Drawing.Point(303, 139);
+            this.updateCustCancelBtn.Location = new System.Drawing.Point(284, 139);
             this.updateCustCancelBtn.Name = "updateCustCancelBtn";
             this.updateCustCancelBtn.Size = new System.Drawing.Size(105, 32);
             this.updateCustCancelBtn.TabIndex = 1;
             this.updateCustCancelBtn.Text = "Cancel";
             this.updateCustCancelBtn.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // updateFirstNameLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
+            this.updateFirstNameLabel.AutoSize = true;
+            this.updateFirstNameLabel.Location = new System.Drawing.Point(44, 30);
+            this.updateFirstNameLabel.Name = "updateFirstNameLabel";
+            this.updateFirstNameLabel.Size = new System.Drawing.Size(57, 13);
+            this.updateFirstNameLabel.TabIndex = 2;
+            this.updateFirstNameLabel.Text = "First Name";
             // 
-            // label2
+            // updateLastNameLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 56);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
+            this.updateLastNameLabel.AutoSize = true;
+            this.updateLastNameLabel.Location = new System.Drawing.Point(44, 56);
+            this.updateLastNameLabel.Name = "updateLastNameLabel";
+            this.updateLastNameLabel.Size = new System.Drawing.Size(58, 13);
+            this.updateLastNameLabel.TabIndex = 3;
+            this.updateLastNameLabel.Text = "Last Name";
             // 
-            // label3
+            // updatePhoneLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(44, 82);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "label3";
+            this.updatePhoneLabel.AutoSize = true;
+            this.updatePhoneLabel.Location = new System.Drawing.Point(44, 82);
+            this.updatePhoneLabel.Name = "updatePhoneLabel";
+            this.updatePhoneLabel.Size = new System.Drawing.Size(78, 13);
+            this.updatePhoneLabel.TabIndex = 4;
+            this.updatePhoneLabel.Text = "Phone Number";
             // 
-            // label4
+            // updateAddressLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(44, 108);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "label4";
+            this.updateAddressLabel.AutoSize = true;
+            this.updateAddressLabel.Location = new System.Drawing.Point(44, 108);
+            this.updateAddressLabel.Name = "updateAddressLabel";
+            this.updateAddressLabel.Size = new System.Drawing.Size(45, 13);
+            this.updateAddressLabel.TabIndex = 5;
+            this.updateAddressLabel.Text = "Address";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(155, 23);
+            this.textBox1.Location = new System.Drawing.Point(136, 23);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(253, 20);
             this.textBox1.TabIndex = 6;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(155, 49);
+            this.textBox2.Location = new System.Drawing.Point(136, 49);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(253, 20);
             this.textBox2.TabIndex = 7;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(155, 75);
+            this.textBox3.Location = new System.Drawing.Point(136, 75);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(253, 20);
             this.textBox3.TabIndex = 8;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(155, 101);
+            this.textBox4.Location = new System.Drawing.Point(136, 101);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(253, 20);
             this.textBox4.TabIndex = 9;
@@ -127,15 +127,15 @@ namespace GroomingSalonRegistrationApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(459, 201);
+            this.ClientSize = new System.Drawing.Size(445, 201);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.updateAddressLabel);
+            this.Controls.Add(this.updatePhoneLabel);
+            this.Controls.Add(this.updateLastNameLabel);
+            this.Controls.Add(this.updateFirstNameLabel);
             this.Controls.Add(this.updateCustCancelBtn);
             this.Controls.Add(this.updateCustSubmitBtn);
             this.Name = "UpdateCustomerForm";
@@ -149,10 +149,10 @@ namespace GroomingSalonRegistrationApp
 
         private System.Windows.Forms.Button updateCustSubmitBtn;
         private System.Windows.Forms.Button updateCustCancelBtn;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label updateFirstNameLabel;
+        private System.Windows.Forms.Label updateLastNameLabel;
+        private System.Windows.Forms.Label updatePhoneLabel;
+        private System.Windows.Forms.Label updateAddressLabel;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
