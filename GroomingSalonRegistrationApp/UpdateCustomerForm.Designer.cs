@@ -35,10 +35,10 @@ namespace GroomingSalonRegistrationApp
             this.updateLastNameLabel = new System.Windows.Forms.Label();
             this.updatePhoneLabel = new System.Windows.Forms.Label();
             this.updateAddressLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.updateFirstNameTxt = new System.Windows.Forms.TextBox();
+            this.updateLastNameTxt = new System.Windows.Forms.TextBox();
+            this.updatePhoneTxt = new System.Windows.Forms.TextBox();
+            this.updateAddressTxt = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // updateCustSubmitBtn
@@ -95,43 +95,43 @@ namespace GroomingSalonRegistrationApp
             this.updateAddressLabel.TabIndex = 5;
             this.updateAddressLabel.Text = "Address";
             // 
-            // textBox1
+            // updateFirstNameTxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(136, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(253, 20);
-            this.textBox1.TabIndex = 6;
+            this.updateFirstNameTxt.Location = new System.Drawing.Point(136, 23);
+            this.updateFirstNameTxt.Name = "updateFirstNameTxt";
+            this.updateFirstNameTxt.Size = new System.Drawing.Size(253, 20);
+            this.updateFirstNameTxt.TabIndex = 6;
             // 
-            // textBox2
+            // updateLastNameTxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(136, 49);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(253, 20);
-            this.textBox2.TabIndex = 7;
+            this.updateLastNameTxt.Location = new System.Drawing.Point(136, 49);
+            this.updateLastNameTxt.Name = "updateLastNameTxt";
+            this.updateLastNameTxt.Size = new System.Drawing.Size(253, 20);
+            this.updateLastNameTxt.TabIndex = 7;
             // 
-            // textBox3
+            // updatePhoneTxt
             // 
-            this.textBox3.Location = new System.Drawing.Point(136, 75);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(253, 20);
-            this.textBox3.TabIndex = 8;
+            this.updatePhoneTxt.Location = new System.Drawing.Point(136, 75);
+            this.updatePhoneTxt.Name = "updatePhoneTxt";
+            this.updatePhoneTxt.Size = new System.Drawing.Size(253, 20);
+            this.updatePhoneTxt.TabIndex = 8;
             // 
-            // textBox4
+            // updateAddressTxt
             // 
-            this.textBox4.Location = new System.Drawing.Point(136, 101);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(253, 20);
-            this.textBox4.TabIndex = 9;
+            this.updateAddressTxt.Location = new System.Drawing.Point(136, 101);
+            this.updateAddressTxt.Name = "updateAddressTxt";
+            this.updateAddressTxt.Size = new System.Drawing.Size(253, 20);
+            this.updateAddressTxt.TabIndex = 9;
             // 
             // UpdateCustomerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(445, 201);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.updateAddressTxt);
+            this.Controls.Add(this.updatePhoneTxt);
+            this.Controls.Add(this.updateLastNameTxt);
+            this.Controls.Add(this.updateFirstNameTxt);
             this.Controls.Add(this.updateAddressLabel);
             this.Controls.Add(this.updatePhoneLabel);
             this.Controls.Add(this.updateLastNameLabel);
@@ -153,9 +153,9 @@ namespace GroomingSalonRegistrationApp
         private System.Windows.Forms.Label updateLastNameLabel;
         private System.Windows.Forms.Label updatePhoneLabel;
         private System.Windows.Forms.Label updateAddressLabel;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox updateFirstNameTxt;
+        private System.Windows.Forms.TextBox updateLastNameTxt;
+        private System.Windows.Forms.TextBox updatePhoneTxt;
+        private System.Windows.Forms.TextBox updateAddressTxt;
     }
 }
