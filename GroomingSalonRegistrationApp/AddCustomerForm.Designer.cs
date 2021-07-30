@@ -113,6 +113,7 @@ namespace GroomingSalonRegistrationApp
             this.addCustSubmitBtn.TabIndex = 8;
             this.addCustSubmitBtn.Text = "Submit";
             this.addCustSubmitBtn.UseVisualStyleBackColor = true;
+            this.addCustSubmitBtn.Click += new System.EventHandler(this.addCustSubmitBtn_Click);
             // 
             // addCustCancelBtn
             // 
@@ -122,6 +123,7 @@ namespace GroomingSalonRegistrationApp
             this.addCustCancelBtn.TabIndex = 9;
             this.addCustCancelBtn.Text = "Cancel";
             this.addCustCancelBtn.UseVisualStyleBackColor = true;
+            this.addCustCancelBtn.Click += new System.EventHandler(this.addCustCancelBtn_Click);
             // 
             // AddCustomerForm
             // 
