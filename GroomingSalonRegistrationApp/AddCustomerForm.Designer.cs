@@ -37,8 +37,8 @@ namespace GroomingSalonRegistrationApp
             this.custLastNameTxt = new System.Windows.Forms.TextBox();
             this.custPhoneTxt = new System.Windows.Forms.TextBox();
             this.custAddressTxt = new System.Windows.Forms.TextBox();
-            this.addCustSubmitbtn = new System.Windows.Forms.Button();
-            this.addCustCancelbtn = new System.Windows.Forms.Button();
+            this.addCustSubmitBtn = new System.Windows.Forms.Button();
+            this.addCustCancelBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // custFirstNameLabel
@@ -105,32 +105,32 @@ namespace GroomingSalonRegistrationApp
             this.custAddressTxt.Size = new System.Drawing.Size(232, 20);
             this.custAddressTxt.TabIndex = 7;
             // 
-            // addCustSubmitbtn
+            // addCustSubmitBtn
             // 
-            this.addCustSubmitbtn.Location = new System.Drawing.Point(127, 135);
-            this.addCustSubmitbtn.Name = "addCustSubmitbtn";
-            this.addCustSubmitbtn.Size = new System.Drawing.Size(102, 34);
-            this.addCustSubmitbtn.TabIndex = 8;
-            this.addCustSubmitbtn.Text = "Submit";
-            this.addCustSubmitbtn.UseVisualStyleBackColor = true;
+            this.addCustSubmitBtn.Location = new System.Drawing.Point(127, 135);
+            this.addCustSubmitBtn.Name = "addCustSubmitBtn";
+            this.addCustSubmitBtn.Size = new System.Drawing.Size(102, 34);
+            this.addCustSubmitBtn.TabIndex = 8;
+            this.addCustSubmitBtn.Text = "Submit";
+            this.addCustSubmitBtn.UseVisualStyleBackColor = true;
             // 
-            // addCustCancelbtn
+            // addCustCancelBtn
             // 
-            this.addCustCancelbtn.Location = new System.Drawing.Point(260, 135);
-            this.addCustCancelbtn.Name = "addCustCancelbtn";
-            this.addCustCancelbtn.Size = new System.Drawing.Size(99, 34);
-            this.addCustCancelbtn.TabIndex = 9;
-            this.addCustCancelbtn.Text = "Cancel";
-            this.addCustCancelbtn.UseVisualStyleBackColor = true;
+            this.addCustCancelBtn.Location = new System.Drawing.Point(260, 135);
+            this.addCustCancelBtn.Name = "addCustCancelBtn";
+            this.addCustCancelBtn.Size = new System.Drawing.Size(99, 34);
+            this.addCustCancelBtn.TabIndex = 9;
+            this.addCustCancelBtn.Text = "Cancel";
+            this.addCustCancelBtn.UseVisualStyleBackColor = true;
             // 
             // AddCustomerForm
             // 
-            this.AcceptButton = this.addCustSubmitbtn;
+            this.AcceptButton = this.addCustSubmitBtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(408, 194);
-            this.Controls.Add(this.addCustCancelbtn);
-            this.Controls.Add(this.addCustSubmitbtn);
+            this.Controls.Add(this.addCustCancelBtn);
+            this.Controls.Add(this.addCustSubmitBtn);
             this.Controls.Add(this.custAddressTxt);
             this.Controls.Add(this.custPhoneTxt);
             this.Controls.Add(this.custLastNameTxt);
@@ -156,7 +156,7 @@ namespace GroomingSalonRegistrationApp
         private System.Windows.Forms.TextBox custLastNameTxt;
         private System.Windows.Forms.TextBox custPhoneTxt;
         private System.Windows.Forms.TextBox custAddressTxt;
-        private System.Windows.Forms.Button addCustSubmitbtn;
-        private System.Windows.Forms.Button addCustCancelbtn;
+        private System.Windows.Forms.Button addCustSubmitBtn;
+        private System.Windows.Forms.Button addCustCancelBtn;
     }
 }
