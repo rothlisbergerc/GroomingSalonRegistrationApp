@@ -18,5 +18,10 @@ namespace GroomingSalonRegistrationApp
         public String PhoneNumber { get; set; }
 
         public String HomeAddress { get; set; }
+
+        public override string ToString()
+        {
+            return FirstName + " " + LastName;
+        }
     }
 }
