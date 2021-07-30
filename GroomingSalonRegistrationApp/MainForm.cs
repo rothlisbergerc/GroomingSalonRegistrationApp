@@ -16,5 +16,12 @@ namespace GroomingSalonRegistrationApp
         {
             InitializeComponent();
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            List<Customer> allCustomers = SalonDb.getAllCustomers();
+
+            custListBox.DataSource = allCustomers;
+        }
     }
 }

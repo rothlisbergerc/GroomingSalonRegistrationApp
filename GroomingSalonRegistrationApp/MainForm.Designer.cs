@@ -124,6 +124,7 @@ namespace GroomingSalonRegistrationApp
             this.Controls.Add(this.custListBox);
             this.Name = "MainForm";
             this.Text = "Grooming Salon Registration";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
