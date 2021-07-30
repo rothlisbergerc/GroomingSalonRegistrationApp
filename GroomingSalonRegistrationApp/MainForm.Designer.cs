@@ -91,6 +91,7 @@ namespace GroomingSalonRegistrationApp
             this.addPetBtn.TabIndex = 5;
             this.addPetBtn.Text = "Add Pet";
             this.addPetBtn.UseVisualStyleBackColor = true;
+            this.addPetBtn.Click += new System.EventHandler(this.addPetBtn_Click);
             // 
             // updateBtn
             // 

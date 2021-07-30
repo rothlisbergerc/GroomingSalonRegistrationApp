@@ -29,5 +29,11 @@ namespace GroomingSalonRegistrationApp
             AddCustomerForm newCust = new AddCustomerForm();
             newCust.ShowDialog();
         }
+
+        private void addPetBtn_Click(object sender, EventArgs e)
+        {
+            AddPetForm newPet = new AddPetForm();
+            newPet.ShowDialog();
+        }
     }
 }
