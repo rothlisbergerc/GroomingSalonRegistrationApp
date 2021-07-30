@@ -81,6 +81,7 @@ namespace GroomingSalonRegistrationApp
             this.addCustBtn.TabIndex = 4;
             this.addCustBtn.Text = "Add Customer";
             this.addCustBtn.UseVisualStyleBackColor = true;
+            this.addCustBtn.Click += new System.EventHandler(this.addCustBtn_Click);
             // 
             // addPetBtn
             // 
@@ -90,6 +91,7 @@ namespace GroomingSalonRegistrationApp
             this.addPetBtn.TabIndex = 5;
             this.addPetBtn.Text = "Add Pet";
             this.addPetBtn.UseVisualStyleBackColor = true;
+            this.addPetBtn.Click += new System.EventHandler(this.addPetBtn_Click);
             // 
             // updateBtn
             // 
