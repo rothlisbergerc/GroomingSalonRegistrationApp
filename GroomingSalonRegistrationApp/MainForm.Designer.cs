@@ -1,7 +1,7 @@
 ﻿
 namespace GroomingSalonRegistrationApp
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -109,7 +109,7 @@ namespace GroomingSalonRegistrationApp
             this.deleteBtn.Text = "Delete";
             this.deleteBtn.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -122,7 +122,7 @@ namespace GroomingSalonRegistrationApp
             this.Controls.Add(this.custListBoxLabel);
             this.Controls.Add(this.petComboBox);
             this.Controls.Add(this.custListBox);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Grooming Salon Registration";
             this.ResumeLayout(false);
             this.PerformLayout();
