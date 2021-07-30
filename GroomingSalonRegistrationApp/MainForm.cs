@@ -23,5 +23,11 @@ namespace GroomingSalonRegistrationApp
 
             custListBox.DataSource = allCustomers;
         }
+
+        private void addCustBtn_Click(object sender, EventArgs e)
+        {
+            AddCustomerForm newCust = new AddCustomerForm();
+            newCust.ShowDialog();
+        }
     }
 }

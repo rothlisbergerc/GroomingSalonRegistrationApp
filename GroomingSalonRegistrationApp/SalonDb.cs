@@ -8,6 +8,9 @@ namespace GroomingSalonRegistrationApp
 {
     static class SalonDb
     {
+        /// <summary>
+        /// Creates a list of all the customers to be retrieved by the database.
+        /// </summary>
         public static List<Customer> getAllCustomers()
         {
             PetSalonContext context = new PetSalonContext();
@@ -18,6 +21,19 @@ namespace GroomingSalonRegistrationApp
                  select c).ToList();
 
             return allCustomers;
+        }
+
+        /// <summary>
+        /// Adds a customer to the database
+        /// </summary>
+        public static Customer Add(Customer c)
+        {
+            using(PetSalonContext context = new PetSalonContext())
+            {
+                context.Customers.Add(c);
+                context.SaveChanges();
+                return c;
+            }
         }
     }
 }
