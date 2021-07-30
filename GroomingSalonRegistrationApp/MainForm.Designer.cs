@@ -42,23 +42,23 @@ namespace GroomingSalonRegistrationApp
             // custListBox
             // 
             this.custListBox.FormattingEnabled = true;
-            this.custListBox.Location = new System.Drawing.Point(81, 33);
+            this.custListBox.Location = new System.Drawing.Point(26, 43);
             this.custListBox.Name = "custListBox";
-            this.custListBox.Size = new System.Drawing.Size(167, 251);
+            this.custListBox.Size = new System.Drawing.Size(206, 121);
             this.custListBox.TabIndex = 0;
             // 
             // petComboBox
             // 
             this.petComboBox.FormattingEnabled = true;
-            this.petComboBox.Location = new System.Drawing.Point(328, 33);
+            this.petComboBox.Location = new System.Drawing.Point(26, 185);
             this.petComboBox.Name = "petComboBox";
-            this.petComboBox.Size = new System.Drawing.Size(235, 21);
+            this.petComboBox.Size = new System.Drawing.Size(206, 21);
             this.petComboBox.TabIndex = 1;
             // 
             // custListBoxLabel
             // 
             this.custListBoxLabel.AutoSize = true;
-            this.custListBoxLabel.Location = new System.Drawing.Point(27, 33);
+            this.custListBoxLabel.Location = new System.Drawing.Point(23, 27);
             this.custListBoxLabel.Name = "custListBoxLabel";
             this.custListBoxLabel.Size = new System.Drawing.Size(51, 13);
             this.custListBoxLabel.TabIndex = 2;
@@ -67,7 +67,7 @@ namespace GroomingSalonRegistrationApp
             // petCboLabel
             // 
             this.petCboLabel.AutoSize = true;
-            this.petCboLabel.Location = new System.Drawing.Point(274, 33);
+            this.petCboLabel.Location = new System.Drawing.Point(23, 169);
             this.petCboLabel.Name = "petCboLabel";
             this.petCboLabel.Size = new System.Drawing.Size(23, 13);
             this.petCboLabel.TabIndex = 3;
@@ -75,36 +75,36 @@ namespace GroomingSalonRegistrationApp
             // 
             // addCustBtn
             // 
-            this.addCustBtn.Location = new System.Drawing.Point(592, 33);
+            this.addCustBtn.Location = new System.Drawing.Point(257, 43);
             this.addCustBtn.Name = "addCustBtn";
-            this.addCustBtn.Size = new System.Drawing.Size(138, 51);
+            this.addCustBtn.Size = new System.Drawing.Size(138, 29);
             this.addCustBtn.TabIndex = 4;
             this.addCustBtn.Text = "Add Customer";
             this.addCustBtn.UseVisualStyleBackColor = true;
             // 
             // addPetBtn
             // 
-            this.addPetBtn.Location = new System.Drawing.Point(592, 112);
+            this.addPetBtn.Location = new System.Drawing.Point(257, 87);
             this.addPetBtn.Name = "addPetBtn";
-            this.addPetBtn.Size = new System.Drawing.Size(138, 51);
+            this.addPetBtn.Size = new System.Drawing.Size(138, 29);
             this.addPetBtn.TabIndex = 5;
             this.addPetBtn.Text = "Add Pet";
             this.addPetBtn.UseVisualStyleBackColor = true;
             // 
             // updateBtn
             // 
-            this.updateBtn.Location = new System.Drawing.Point(592, 197);
+            this.updateBtn.Location = new System.Drawing.Point(257, 135);
             this.updateBtn.Name = "updateBtn";
-            this.updateBtn.Size = new System.Drawing.Size(138, 51);
+            this.updateBtn.Size = new System.Drawing.Size(138, 29);
             this.updateBtn.TabIndex = 6;
             this.updateBtn.Text = "Update";
             this.updateBtn.UseVisualStyleBackColor = true;
             // 
             // deleteBtn
             // 
-            this.deleteBtn.Location = new System.Drawing.Point(592, 277);
+            this.deleteBtn.Location = new System.Drawing.Point(257, 177);
             this.deleteBtn.Name = "deleteBtn";
-            this.deleteBtn.Size = new System.Drawing.Size(138, 51);
+            this.deleteBtn.Size = new System.Drawing.Size(138, 29);
             this.deleteBtn.TabIndex = 7;
             this.deleteBtn.Text = "Delete";
             this.deleteBtn.UseVisualStyleBackColor = true;
@@ -113,7 +113,7 @@ namespace GroomingSalonRegistrationApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(439, 262);
             this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.updateBtn);
             this.Controls.Add(this.addPetBtn);
