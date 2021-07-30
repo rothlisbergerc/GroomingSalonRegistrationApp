@@ -41,18 +41,18 @@ namespace GroomingSalonRegistrationApp
             // 
             // updatePetSubmitBtn
             // 
-            this.updatePetSubmitBtn.Location = new System.Drawing.Point(184, 146);
+            this.updatePetSubmitBtn.Location = new System.Drawing.Point(117, 112);
             this.updatePetSubmitBtn.Name = "updatePetSubmitBtn";
-            this.updatePetSubmitBtn.Size = new System.Drawing.Size(75, 23);
+            this.updatePetSubmitBtn.Size = new System.Drawing.Size(105, 38);
             this.updatePetSubmitBtn.TabIndex = 0;
             this.updatePetSubmitBtn.Text = "Submit";
             this.updatePetSubmitBtn.UseVisualStyleBackColor = true;
             // 
             // updatePetCancelBtn
             // 
-            this.updatePetCancelBtn.Location = new System.Drawing.Point(319, 146);
+            this.updatePetCancelBtn.Location = new System.Drawing.Point(260, 112);
             this.updatePetCancelBtn.Name = "updatePetCancelBtn";
-            this.updatePetCancelBtn.Size = new System.Drawing.Size(75, 23);
+            this.updatePetCancelBtn.Size = new System.Drawing.Size(105, 38);
             this.updatePetCancelBtn.TabIndex = 1;
             this.updatePetCancelBtn.Text = "Cancel";
             this.updatePetCancelBtn.UseVisualStyleBackColor = true;
@@ -60,7 +60,7 @@ namespace GroomingSalonRegistrationApp
             // updatePetNameLabel
             // 
             this.updatePetNameLabel.AutoSize = true;
-            this.updatePetNameLabel.Location = new System.Drawing.Point(45, 59);
+            this.updatePetNameLabel.Location = new System.Drawing.Point(38, 25);
             this.updatePetNameLabel.Name = "updatePetNameLabel";
             this.updatePetNameLabel.Size = new System.Drawing.Size(35, 13);
             this.updatePetNameLabel.TabIndex = 2;
@@ -69,7 +69,7 @@ namespace GroomingSalonRegistrationApp
             // updatePetBreedLabel
             // 
             this.updatePetBreedLabel.AutoSize = true;
-            this.updatePetBreedLabel.Location = new System.Drawing.Point(45, 85);
+            this.updatePetBreedLabel.Location = new System.Drawing.Point(38, 51);
             this.updatePetBreedLabel.Name = "updatePetBreedLabel";
             this.updatePetBreedLabel.Size = new System.Drawing.Size(35, 13);
             this.updatePetBreedLabel.TabIndex = 3;
@@ -78,7 +78,7 @@ namespace GroomingSalonRegistrationApp
             // updatePetAgeLabel
             // 
             this.updatePetAgeLabel.AutoSize = true;
-            this.updatePetAgeLabel.Location = new System.Drawing.Point(45, 111);
+            this.updatePetAgeLabel.Location = new System.Drawing.Point(38, 77);
             this.updatePetAgeLabel.Name = "updatePetAgeLabel";
             this.updatePetAgeLabel.Size = new System.Drawing.Size(26, 13);
             this.updatePetAgeLabel.TabIndex = 4;
@@ -86,30 +86,31 @@ namespace GroomingSalonRegistrationApp
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(294, 56);
+            this.textBox1.Location = new System.Drawing.Point(117, 22);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(248, 20);
             this.textBox1.TabIndex = 6;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(294, 82);
+            this.textBox2.Location = new System.Drawing.Point(117, 48);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(248, 20);
             this.textBox2.TabIndex = 7;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(294, 108);
+            this.textBox3.Location = new System.Drawing.Point(117, 74);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.Size = new System.Drawing.Size(248, 20);
             this.textBox3.TabIndex = 8;
             // 
             // UpdatePetForm
             // 
+            this.AcceptButton = this.updatePetSubmitBtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(428, 201);
+            this.ClientSize = new System.Drawing.Size(411, 182);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
