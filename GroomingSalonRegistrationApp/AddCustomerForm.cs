@@ -17,16 +17,46 @@ namespace GroomingSalonRegistrationApp
             InitializeComponent();
         }
 
+        //Need an existing customer variable to be able to store for the update.
+        Customer existingCust;
+        public AddCustomerForm(Customer c)
+        {
+            InitializeComponent();
+            custFirstNameTxt.Text = c.FirstName;
+            custLastNameTxt.Text = c.LastName;
+            custAddressTxt.Text = c.HomeAddress;
+            custPhoneTxt.Text = c.PhoneNumber;
+
+            existingCust = c;
+        }
+
         private void addCustSubmitBtn_Click(object sender, EventArgs e)
         {
-            Customer c = new Customer
+            if (existingCust == null)
             {
-                FirstName = custFirstNameTxt.Text,
-                LastName = custLastNameTxt.Text,
-                PhoneNumber = custPhoneTxt.Text,
-                HomeAddress = custAddressTxt.Text
-            };
-            SalonDb.Add(c);
+                Customer c = new Customer
+                {
+                    FirstName = custFirstNameTxt.Text,
+                    LastName = custLastNameTxt.Text,
+                    PhoneNumber = custPhoneTxt.Text,
+                    HomeAddress = custAddressTxt.Text
+                };
+                SalonDb.Add(c);
+                cleanTextBoxes();
+            }
+            else
+            {
+                existingCust.FirstName = custFirstNameTxt.Text;
+                existingCust.LastName = custLastNameTxt.Text;
+                existingCust.HomeAddress = custAddressTxt.Text;
+                existingCust.PhoneNumber = custPhoneTxt.Text;
+                SalonDb.Update(existingCust);
+                cleanTextBoxes();
+            }
+        }
+
+        private void cleanTextBoxes()
+        {
             custFirstNameTxt.Text = "";
             custLastNameTxt.Text = "";
             custPhoneTxt.Text = "";

@@ -46,5 +46,20 @@ namespace GroomingSalonRegistrationApp
             AddPetForm newPet = new AddPetForm();
             newPet.ShowDialog();
         }
+
+        private void updateBtn_Click(object sender, EventArgs e)
+        {
+            if(petComboBox.SelectedIndex < 1)
+            {
+                Customer selectCust = custListBox.SelectedItem as Customer;
+                AddCustomerForm newCust = new AddCustomerForm(selectCust);
+                newCust.ShowDialog();
+                custList(SalonDb.getAllCustomers());
+            }
+            else
+            {
+
+            }
+        }
     }
 }
