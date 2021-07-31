@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;
 
 namespace GroomingSalonRegistrationApp
 {
@@ -31,6 +32,16 @@ namespace GroomingSalonRegistrationApp
             using(PetSalonContext context = new PetSalonContext())
             {
                 context.Customers.Add(c);
+                context.SaveChanges();
+                return c;
+            }
+        }
+
+        public static Customer Update(Customer c)
+        {
+            using(PetSalonContext context = new PetSalonContext())
+            {
+                context.Entry(c).State = EntityState.Modified;
                 context.SaveChanges();
                 return c;
             }
