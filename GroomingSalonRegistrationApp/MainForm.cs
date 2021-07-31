@@ -26,6 +26,7 @@ namespace GroomingSalonRegistrationApp
             petList(allPets);
         }
 
+
         private void custList(List<Customer> custs)
         {
             custListBox.Items.Clear();
