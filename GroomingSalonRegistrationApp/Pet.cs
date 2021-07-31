@@ -16,5 +16,10 @@ namespace GroomingSalonRegistrationApp
 
         //Made a float because most animals won't live past roughly 25-30 
         public float Age { get; set; }
+
+        public override string ToString()
+        {
+            return Name + " " + Breed;
+        }
     }
 }
