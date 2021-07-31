@@ -21,6 +21,9 @@ namespace GroomingSalonRegistrationApp
         {
             List<Customer> allCustomers = SalonDb.getAllCustomers();
             custList(allCustomers);
+
+            List<Pet> allPets = SalonDb.getAllPets();
+            petList(allPets);
         }
 
         private void custList(List<Customer> custs)
@@ -29,6 +32,15 @@ namespace GroomingSalonRegistrationApp
             foreach(Customer c in custs)
             {
                 custListBox.Items.Add(c);
+            }
+        }
+
+        private void petList(List<Pet> pets)
+        {
+            petComboBox.Items.Clear();
+            foreach(Pet p in pets)
+            {
+                petComboBox.Items.Add(p);
             }
         }
 

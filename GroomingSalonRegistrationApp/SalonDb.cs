@@ -24,6 +24,18 @@ namespace GroomingSalonRegistrationApp
             return allCustomers;
         }
 
+        public static List<Pet> getAllPets()
+        {
+            PetSalonContext context = new PetSalonContext();
+
+            List<Pet> allPets =
+                (from p in context.Pets
+                 orderby p.Name
+                 select p).ToList();
+
+            return allPets;
+        }
+
         /// <summary>
         /// Adds a customer to the database
         /// </summary>
