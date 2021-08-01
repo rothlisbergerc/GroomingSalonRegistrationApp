@@ -23,7 +23,7 @@ namespace GroomingSalonRegistrationApp
         {
             InitializeComponent();
             //Had to put to the left in order to parse.
-            p.Age = float.Parse(petAgeTxt.Text);
+            petAgeTxt.Text = p.Age.ToString();
             petBreedTxt.Text = p.Breed;
             petNameTxt.Text = p.Name;
 
@@ -55,6 +55,7 @@ namespace GroomingSalonRegistrationApp
                 exisitingPet.Age = float.Parse(petAgeTxt.Text);
                 exisitingPet.Breed = petBreedTxt.Text;
                 exisitingPet.Name = petNameTxt.Text;
+                SalonDb.UpdatePet(exisitingPet);
                 cleanTextBoxes();
             }
         }
