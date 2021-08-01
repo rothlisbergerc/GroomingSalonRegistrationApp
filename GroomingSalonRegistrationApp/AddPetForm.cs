@@ -23,8 +23,7 @@ namespace GroomingSalonRegistrationApp
         {
             InitializeComponent();
             //Had to put to the left in order to parse.
-            if (p.Age == 0f)
-            { p.Age = float.Parse(petAgeTxt.Text); }
+            petAgeTxt.Text = p.Age.ToString();
             petBreedTxt.Text = p.Breed;
             petNameTxt.Text = p.Name;
 

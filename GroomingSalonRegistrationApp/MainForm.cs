@@ -65,12 +65,17 @@ namespace GroomingSalonRegistrationApp
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
-            if (petComboBox.SelectedIndex < 1)
+            //If the customer has only a name selected will update them otherwise will update pet.
+            if (custListBox.SelectedIndex > -1 && petComboBox.SelectedIndex == -1)
             {
                 Customer selectCust = custListBox.SelectedItem as Customer;
                 AddCustomerForm updateCust = new AddCustomerForm(selectCust);
                 updateCust.ShowDialog();
                 custList(SalonDb.getAllCustomers());
+
+                //Resets the selected indexes after being updated.
+                custListBox.SelectedIndex = -1;
+                petComboBox.SelectedIndex = -1;
             }
             else
             {
@@ -78,6 +83,10 @@ namespace GroomingSalonRegistrationApp
                 AddPetForm updatePet = new AddPetForm(selectPet);
                 updatePet.ShowDialog();
                 petList(SalonDb.getAllPets());
+
+                //Same as above.
+                custListBox.SelectedIndex = -1;
+                petComboBox.SelectedIndex = -1;
             }
         }
     }
