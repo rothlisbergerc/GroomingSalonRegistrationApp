@@ -89,5 +89,24 @@ namespace GroomingSalonRegistrationApp
                 petComboBox.SelectedIndex = -1;
             }
         }
+
+        private void deleteBtn_Click(object sender, EventArgs e)
+        {
+            if(custListBox.SelectedIndex < 0)
+            {
+                MessageBox.Show("You need a customer to delete");
+            }
+            else
+            {
+                Customer selectCust = custListBox.SelectedItem as Customer;
+                DialogResult result = MessageBox.Show($"Are you sure you want to delete {selectCust}","Delete?",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
+                if(result == DialogResult.Yes)
+                {
+                    custListBox.SelectedIndex = -1;
+                    SalonDb.DeleteCust(selectCust);
+                    custList(SalonDb.getAllCustomers());
+                }
+            }
+        }
     }
 }
