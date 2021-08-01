@@ -59,6 +59,15 @@ namespace GroomingSalonRegistrationApp
             }
         }
 
+        public static void DeleteCust(Customer c)
+        {
+            using(PetSalonContext context = new PetSalonContext())
+            {
+                context.Entry(c).State = EntityState.Deleted;
+                context.SaveChanges();
+            }
+        }
+
         public static Pet Add(Pet p)
         {
             using(PetSalonContext context = new PetSalonContext())
