@@ -87,5 +87,14 @@ namespace GroomingSalonRegistrationApp
                 return p;
             }
         }
+
+        public static void DeletePet(Pet p)
+        {
+            using(PetSalonContext context = new PetSalonContext())
+            {
+                context.Entry(p).State = EntityState.Deleted;
+                context.SaveChanges();
+            }
+        }
     }
 }

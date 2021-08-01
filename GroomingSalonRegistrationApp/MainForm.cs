@@ -96,7 +96,7 @@ namespace GroomingSalonRegistrationApp
             {
                 MessageBox.Show("You need a customer to delete");
             }
-            else
+            else if(custListBox.SelectedIndex > 0 && petComboBox.SelectedIndex == -1)
             {
                 Customer selectCust = custListBox.SelectedItem as Customer;
                 DialogResult result = MessageBox.Show($"Are you sure you want to delete {selectCust}","Delete?",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
@@ -105,6 +105,17 @@ namespace GroomingSalonRegistrationApp
                     custListBox.SelectedIndex = -1;
                     SalonDb.DeleteCust(selectCust);
                     custList(SalonDb.getAllCustomers());
+                }
+            }
+            else
+            {
+                Pet selectPet = petComboBox.SelectedItem as Pet;
+                DialogResult result = MessageBox.Show($"Are you sure you want to delete {selectPet}", "Delete?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.Yes)
+                {
+                    petComboBox.SelectedIndex = -1;
+                    SalonDb.DeletePet(selectPet);
+                    petList(SalonDb.getAllPets());
                 }
             }
         }
