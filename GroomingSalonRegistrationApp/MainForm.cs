@@ -30,7 +30,7 @@ namespace GroomingSalonRegistrationApp
         private void custList(List<Customer> custs)
         {
             custListBox.Items.Clear();
-            foreach(Customer c in custs)
+            foreach (Customer c in custs)
             {
                 custListBox.Items.Add(c);
             }
@@ -39,7 +39,7 @@ namespace GroomingSalonRegistrationApp
         private void petList(List<Pet> pets)
         {
             petComboBox.Items.Clear();
-            foreach(Pet p in pets)
+            foreach (Pet p in pets)
             {
                 petComboBox.Items.Add(p);
             }
@@ -58,11 +58,14 @@ namespace GroomingSalonRegistrationApp
         {
             AddPetForm newPet = new AddPetForm();
             newPet.ShowDialog();
+
+            List<Pet> allPets = SalonDb.getAllPets();
+            petList(allPets);
         }
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
-            if(petComboBox.SelectedIndex < 1)
+            if (petComboBox.SelectedIndex < 1)
             {
                 Customer selectCust = custListBox.SelectedItem as Customer;
                 AddCustomerForm newCust = new AddCustomerForm(selectCust);

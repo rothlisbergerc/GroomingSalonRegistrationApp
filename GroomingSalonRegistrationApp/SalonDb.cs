@@ -49,13 +49,23 @@ namespace GroomingSalonRegistrationApp
             }
         }
 
-        public static Customer Update(Customer c)
+        public static Customer UpdateCust(Customer c)
         {
             using(PetSalonContext context = new PetSalonContext())
             {
                 context.Entry(c).State = EntityState.Modified;
                 context.SaveChanges();
                 return c;
+            }
+        }
+
+        public static Pet Add(Pet p)
+        {
+            using(PetSalonContext context = new PetSalonContext())
+            {
+                context.Pets.Add(p);
+                context.SaveChanges();
+                return p;
             }
         }
     }

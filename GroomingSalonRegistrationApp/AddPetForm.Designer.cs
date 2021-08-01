@@ -95,6 +95,7 @@ namespace GroomingSalonRegistrationApp
             this.addPetSubmitBtn.TabIndex = 6;
             this.addPetSubmitBtn.Text = "Submit";
             this.addPetSubmitBtn.UseVisualStyleBackColor = true;
+            this.addPetSubmitBtn.Click += new System.EventHandler(this.addPetSubmitBtn_Click);
             // 
             // addPetCancelBtn
             // 
@@ -104,6 +105,7 @@ namespace GroomingSalonRegistrationApp
             this.addPetCancelBtn.TabIndex = 7;
             this.addPetCancelBtn.Text = "Cancel";
             this.addPetCancelBtn.UseVisualStyleBackColor = true;
+            this.addPetCancelBtn.Click += new System.EventHandler(this.addPetCancelBtn_Click);
             // 
             // AddPetForm
             // 
