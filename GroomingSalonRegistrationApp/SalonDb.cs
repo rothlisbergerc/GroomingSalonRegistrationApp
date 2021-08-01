@@ -68,5 +68,15 @@ namespace GroomingSalonRegistrationApp
                 return p;
             }
         }
+
+        public static Pet UpdatePet(Pet p)
+        {
+            using(PetSalonContext context = new PetSalonContext())
+            {
+                context.Entry(p).State = EntityState.Modified;
+                context.SaveChanges();
+                return p;
+            }
+        }
     }
 }

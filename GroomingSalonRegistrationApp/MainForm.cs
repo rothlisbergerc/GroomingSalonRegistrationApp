@@ -68,13 +68,16 @@ namespace GroomingSalonRegistrationApp
             if (petComboBox.SelectedIndex < 1)
             {
                 Customer selectCust = custListBox.SelectedItem as Customer;
-                AddCustomerForm newCust = new AddCustomerForm(selectCust);
-                newCust.ShowDialog();
+                AddCustomerForm updateCust = new AddCustomerForm(selectCust);
+                updateCust.ShowDialog();
                 custList(SalonDb.getAllCustomers());
             }
             else
             {
-
+                Pet selectPet = petComboBox.SelectedItem as Pet;
+                AddPetForm updatePet = new AddPetForm(selectPet);
+                updatePet.ShowDialog();
+                petList(SalonDb.getAllPets());
             }
         }
     }
