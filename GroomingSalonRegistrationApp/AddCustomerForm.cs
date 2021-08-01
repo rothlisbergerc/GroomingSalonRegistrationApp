@@ -50,7 +50,7 @@ namespace GroomingSalonRegistrationApp
                 existingCust.LastName = custLastNameTxt.Text;
                 existingCust.HomeAddress = custAddressTxt.Text;
                 existingCust.PhoneNumber = custPhoneTxt.Text;
-                SalonDb.Update(existingCust);
+                SalonDb.UpdateCust(existingCust);
                 cleanTextBoxes();
             }
         }
