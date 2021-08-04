@@ -46,6 +46,7 @@ namespace GroomingSalonRegistrationApp
             this.custListBox.Name = "custListBox";
             this.custListBox.Size = new System.Drawing.Size(206, 121);
             this.custListBox.TabIndex = 0;
+            this.custListBox.SelectedIndexChanged += new System.EventHandler(this.custListBox_SelectedIndexChanged);
             // 
             // petComboBox
             // 
@@ -54,6 +55,7 @@ namespace GroomingSalonRegistrationApp
             this.petComboBox.Name = "petComboBox";
             this.petComboBox.Size = new System.Drawing.Size(206, 21);
             this.petComboBox.TabIndex = 1;
+            this.petComboBox.SelectedIndexChanged += new System.EventHandler(this.petComboBox_SelectedIndexChanged);
             // 
             // custListBoxLabel
             // 
