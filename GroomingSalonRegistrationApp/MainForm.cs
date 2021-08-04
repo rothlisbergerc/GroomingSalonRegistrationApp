@@ -65,8 +65,12 @@ namespace GroomingSalonRegistrationApp
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
+            if(custListBox.SelectedIndex < 0 && petComboBox.SelectedIndex < 0)
+            {
+                updateBtn.Enabled = false;
+            }
             //If the customer has only a name selected will update them otherwise will update pet.
-            if (custListBox.SelectedIndex > -1 && petComboBox.SelectedIndex == -1)
+            else if (custListBox.SelectedIndex > -1 && petComboBox.SelectedIndex == -1)
             {
                 Customer selectCust = custListBox.SelectedItem as Customer;
                 AddCustomerForm updateCust = new AddCustomerForm(selectCust);
@@ -94,7 +98,7 @@ namespace GroomingSalonRegistrationApp
         {
             if(custListBox.SelectedIndex < 0)
             {
-                MessageBox.Show("You need a customer to delete");
+                deleteBtn.Enabled = false;
             }
             else if(custListBox.SelectedIndex > 0 && petComboBox.SelectedIndex == -1)
             {
@@ -118,6 +122,22 @@ namespace GroomingSalonRegistrationApp
                     petList(SalonDb.getAllPets());
                 }
             }
+        }
+
+        private void custListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            buttonEnabled();   
+        }
+
+        private void petComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            buttonEnabled();
+        }
+
+        private void buttonEnabled()
+        {
+            updateBtn.Enabled = true;
+            deleteBtn.Enabled = true;
         }
     }
 }

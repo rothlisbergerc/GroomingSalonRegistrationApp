@@ -62,7 +62,7 @@ namespace GroomingSalonRegistrationApp
 
         private void addPetCancelBtn_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Do you wish to stop adding a pet?", "Really?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            DialogResult result = MessageBox.Show("Do you wish to exit?", "Really?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
                 Close();
