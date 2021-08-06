@@ -80,20 +80,21 @@ namespace GroomingSalonRegistrationApp
             this.addCustBtn.FlatAppearance.BorderSize = 0;
             this.addCustBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addCustBtn.Image = global::GroomingSalonRegistrationApp.Properties.Resources.pawPrintButtonImage;
-            this.addCustBtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.addCustBtn.Location = new System.Drawing.Point(257, 43);
+            this.addCustBtn.Location = new System.Drawing.Point(257, 27);
             this.addCustBtn.Name = "addCustBtn";
-            this.addCustBtn.Size = new System.Drawing.Size(138, 38);
+            this.addCustBtn.Size = new System.Drawing.Size(138, 59);
             this.addCustBtn.TabIndex = 4;
             this.addCustBtn.Text = "Add Customer";
-            this.addCustBtn.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.addCustBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.addCustBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.addCustBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.addCustBtn.UseVisualStyleBackColor = true;
             this.addCustBtn.Click += new System.EventHandler(this.addCustBtn_Click);
             // 
             // addPetBtn
             // 
             this.addPetBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.addPetBtn.FlatAppearance.BorderSize = 0;
+            this.addPetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addPetBtn.Image = global::GroomingSalonRegistrationApp.Properties.Resources.pawPrintButtonImage;
             this.addPetBtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.addPetBtn.Location = new System.Drawing.Point(257, 87);
@@ -107,6 +108,8 @@ namespace GroomingSalonRegistrationApp
             // 
             // updateBtn
             // 
+            this.updateBtn.FlatAppearance.BorderSize = 0;
+            this.updateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updateBtn.Location = new System.Drawing.Point(257, 142);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(138, 29);
@@ -117,6 +120,8 @@ namespace GroomingSalonRegistrationApp
             // 
             // deleteBtn
             // 
+            this.deleteBtn.FlatAppearance.BorderSize = 0;
+            this.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteBtn.Location = new System.Drawing.Point(257, 177);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(138, 29);
