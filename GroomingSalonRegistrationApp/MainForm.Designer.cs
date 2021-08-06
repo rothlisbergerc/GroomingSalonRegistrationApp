@@ -86,7 +86,7 @@ namespace GroomingSalonRegistrationApp
             this.deleteBtn.TabIndex = 7;
             this.deleteBtn.Text = "Delete";
             this.deleteBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.deleteBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.deleteBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.deleteBtn.UseVisualStyleBackColor = true;
             this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
             // 
@@ -101,7 +101,7 @@ namespace GroomingSalonRegistrationApp
             this.updateBtn.TabIndex = 6;
             this.updateBtn.Text = "Update";
             this.updateBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.updateBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.updateBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.updateBtn.UseVisualStyleBackColor = true;
             this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
             // 
@@ -117,7 +117,7 @@ namespace GroomingSalonRegistrationApp
             this.addPetBtn.TabIndex = 5;
             this.addPetBtn.Text = "Add Pet";
             this.addPetBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.addPetBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.addPetBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.addPetBtn.UseVisualStyleBackColor = false;
             this.addPetBtn.Click += new System.EventHandler(this.addPetBtn_Click);
             // 
@@ -132,7 +132,7 @@ namespace GroomingSalonRegistrationApp
             this.addCustBtn.TabIndex = 4;
             this.addCustBtn.Text = "Add Customer";
             this.addCustBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.addCustBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.addCustBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.addCustBtn.UseVisualStyleBackColor = true;
             this.addCustBtn.Click += new System.EventHandler(this.addCustBtn_Click);
             // 
