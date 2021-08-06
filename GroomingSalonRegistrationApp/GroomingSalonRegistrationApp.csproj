@@ -119,6 +119,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UpdateCustomerForm.resx">
       <DependentUpon>UpdateCustomerForm.cs</DependentUpon>
@@ -139,6 +140,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\personButtonImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\pawPrintButtonImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\pencilButtonImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\redXButtonImage.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
