@@ -126,7 +126,7 @@ namespace GroomingSalonRegistrationApp
             this.deleteBtn.FlatAppearance.BorderSize = 0;
             this.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteBtn.Image = global::GroomingSalonRegistrationApp.Properties.Resources.pawPrintButtonImage;
-            this.deleteBtn.Location = new System.Drawing.Point(257, 196);
+            this.deleteBtn.Location = new System.Drawing.Point(257, 212);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(138, 54);
             this.deleteBtn.TabIndex = 7;
