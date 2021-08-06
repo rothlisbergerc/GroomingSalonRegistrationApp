@@ -77,9 +77,10 @@ namespace GroomingSalonRegistrationApp
             // 
             // addCustBtn
             // 
+            this.addCustBtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.addCustBtn.Location = new System.Drawing.Point(257, 43);
             this.addCustBtn.Name = "addCustBtn";
-            this.addCustBtn.Size = new System.Drawing.Size(138, 29);
+            this.addCustBtn.Size = new System.Drawing.Size(138, 38);
             this.addCustBtn.TabIndex = 4;
             this.addCustBtn.Text = "Add Customer";
             this.addCustBtn.UseVisualStyleBackColor = true;
@@ -87,17 +88,20 @@ namespace GroomingSalonRegistrationApp
             // 
             // addPetBtn
             // 
+            this.addPetBtn.Image = global::GroomingSalonRegistrationApp.Properties.Resources.pawPrintButtonImage;
+            this.addPetBtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.addPetBtn.Location = new System.Drawing.Point(257, 87);
             this.addPetBtn.Name = "addPetBtn";
-            this.addPetBtn.Size = new System.Drawing.Size(138, 29);
+            this.addPetBtn.Size = new System.Drawing.Size(138, 49);
             this.addPetBtn.TabIndex = 5;
             this.addPetBtn.Text = "Add Pet";
+            this.addPetBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.addPetBtn.UseVisualStyleBackColor = true;
             this.addPetBtn.Click += new System.EventHandler(this.addPetBtn_Click);
             // 
             // updateBtn
             // 
-            this.updateBtn.Location = new System.Drawing.Point(257, 135);
+            this.updateBtn.Location = new System.Drawing.Point(257, 142);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(138, 29);
             this.updateBtn.TabIndex = 6;
