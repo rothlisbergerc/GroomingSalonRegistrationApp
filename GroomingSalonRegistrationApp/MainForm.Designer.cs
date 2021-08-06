@@ -33,10 +33,10 @@ namespace GroomingSalonRegistrationApp
             this.petComboBox = new System.Windows.Forms.ComboBox();
             this.custListBoxLabel = new System.Windows.Forms.Label();
             this.petCboLabel = new System.Windows.Forms.Label();
-            this.addCustBtn = new System.Windows.Forms.Button();
-            this.addPetBtn = new System.Windows.Forms.Button();
-            this.updateBtn = new System.Windows.Forms.Button();
             this.deleteBtn = new System.Windows.Forms.Button();
+            this.updateBtn = new System.Windows.Forms.Button();
+            this.addPetBtn = new System.Windows.Forms.Button();
+            this.addCustBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // custListBox
@@ -75,20 +75,35 @@ namespace GroomingSalonRegistrationApp
             this.petCboLabel.TabIndex = 3;
             this.petCboLabel.Text = "Pet";
             // 
-            // addCustBtn
+            // deleteBtn
             // 
-            this.addCustBtn.FlatAppearance.BorderSize = 0;
-            this.addCustBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addCustBtn.Image = global::GroomingSalonRegistrationApp.Properties.Resources.pawPrintButtonImage;
-            this.addCustBtn.Location = new System.Drawing.Point(257, 22);
-            this.addCustBtn.Name = "addCustBtn";
-            this.addCustBtn.Size = new System.Drawing.Size(138, 59);
-            this.addCustBtn.TabIndex = 4;
-            this.addCustBtn.Text = "Add Customer";
-            this.addCustBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.addCustBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.addCustBtn.UseVisualStyleBackColor = true;
-            this.addCustBtn.Click += new System.EventHandler(this.addCustBtn_Click);
+            this.deleteBtn.FlatAppearance.BorderSize = 0;
+            this.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteBtn.Image = global::GroomingSalonRegistrationApp.Properties.Resources.redXButtonImage;
+            this.deleteBtn.Location = new System.Drawing.Point(257, 212);
+            this.deleteBtn.Name = "deleteBtn";
+            this.deleteBtn.Size = new System.Drawing.Size(138, 54);
+            this.deleteBtn.TabIndex = 7;
+            this.deleteBtn.Text = "Delete";
+            this.deleteBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.deleteBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.deleteBtn.UseVisualStyleBackColor = true;
+            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
+            // 
+            // updateBtn
+            // 
+            this.updateBtn.FlatAppearance.BorderSize = 0;
+            this.updateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.updateBtn.Image = global::GroomingSalonRegistrationApp.Properties.Resources.pencilButtonImage;
+            this.updateBtn.Location = new System.Drawing.Point(257, 142);
+            this.updateBtn.Name = "updateBtn";
+            this.updateBtn.Size = new System.Drawing.Size(138, 64);
+            this.updateBtn.TabIndex = 6;
+            this.updateBtn.Text = "Update";
+            this.updateBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.updateBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.updateBtn.UseVisualStyleBackColor = true;
+            this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
             // 
             // addPetBtn
             // 
@@ -106,35 +121,20 @@ namespace GroomingSalonRegistrationApp
             this.addPetBtn.UseVisualStyleBackColor = false;
             this.addPetBtn.Click += new System.EventHandler(this.addPetBtn_Click);
             // 
-            // updateBtn
+            // addCustBtn
             // 
-            this.updateBtn.FlatAppearance.BorderSize = 0;
-            this.updateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.updateBtn.Image = global::GroomingSalonRegistrationApp.Properties.Resources.pawPrintButtonImage;
-            this.updateBtn.Location = new System.Drawing.Point(257, 142);
-            this.updateBtn.Name = "updateBtn";
-            this.updateBtn.Size = new System.Drawing.Size(138, 64);
-            this.updateBtn.TabIndex = 6;
-            this.updateBtn.Text = "Update";
-            this.updateBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.updateBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.updateBtn.UseVisualStyleBackColor = true;
-            this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
-            // 
-            // deleteBtn
-            // 
-            this.deleteBtn.FlatAppearance.BorderSize = 0;
-            this.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deleteBtn.Image = global::GroomingSalonRegistrationApp.Properties.Resources.pawPrintButtonImage;
-            this.deleteBtn.Location = new System.Drawing.Point(257, 212);
-            this.deleteBtn.Name = "deleteBtn";
-            this.deleteBtn.Size = new System.Drawing.Size(138, 54);
-            this.deleteBtn.TabIndex = 7;
-            this.deleteBtn.Text = "Delete";
-            this.deleteBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.deleteBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.deleteBtn.UseVisualStyleBackColor = true;
-            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
+            this.addCustBtn.FlatAppearance.BorderSize = 0;
+            this.addCustBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addCustBtn.Image = global::GroomingSalonRegistrationApp.Properties.Resources.personButtonImage;
+            this.addCustBtn.Location = new System.Drawing.Point(257, 22);
+            this.addCustBtn.Name = "addCustBtn";
+            this.addCustBtn.Size = new System.Drawing.Size(138, 59);
+            this.addCustBtn.TabIndex = 4;
+            this.addCustBtn.Text = "Add Customer";
+            this.addCustBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.addCustBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.addCustBtn.UseVisualStyleBackColor = true;
+            this.addCustBtn.Click += new System.EventHandler(this.addCustBtn_Click);
             // 
             // MainForm
             // 
