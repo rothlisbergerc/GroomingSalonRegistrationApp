@@ -42,10 +42,11 @@ namespace GroomingSalonRegistrationApp
             // 
             // custListBox
             // 
+            this.custListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.custListBox.FormattingEnabled = true;
             this.custListBox.Location = new System.Drawing.Point(26, 43);
             this.custListBox.Name = "custListBox";
-            this.custListBox.Size = new System.Drawing.Size(206, 121);
+            this.custListBox.Size = new System.Drawing.Size(206, 119);
             this.custListBox.TabIndex = 0;
             this.custListBox.SelectedIndexChanged += new System.EventHandler(this.custListBox_SelectedIndexChanged);
             // 
@@ -154,6 +155,7 @@ namespace GroomingSalonRegistrationApp
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
+            this.Opacity = 0.95D;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Grooming Salon Registration";
