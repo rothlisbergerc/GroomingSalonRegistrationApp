@@ -29,6 +29,7 @@ namespace GroomingSalonRegistrationApp
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdatePetForm));
             this.updatePetSubmitBtn = new System.Windows.Forms.Button();
             this.updatePetCancelBtn = new System.Windows.Forms.Button();
             this.updatePetNameLabel = new System.Windows.Forms.Label();
@@ -119,7 +120,10 @@ namespace GroomingSalonRegistrationApp
             this.Controls.Add(this.updatePetNameLabel);
             this.Controls.Add(this.updatePetCancelBtn);
             this.Controls.Add(this.updatePetSubmitBtn);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UpdatePetForm";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Update Pet";
             this.ResumeLayout(false);
             this.PerformLayout();
