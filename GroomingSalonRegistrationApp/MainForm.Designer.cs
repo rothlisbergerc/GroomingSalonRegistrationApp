@@ -108,7 +108,7 @@ namespace GroomingSalonRegistrationApp
             // 
             // addPetBtn
             // 
-            this.addPetBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.addPetBtn.BackColor = System.Drawing.Color.PaleTurquoise;
             this.addPetBtn.FlatAppearance.BorderSize = 0;
             this.addPetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addPetBtn.Image = global::GroomingSalonRegistrationApp.Properties.Resources.pawPrintButtonImage;
