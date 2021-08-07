@@ -141,6 +141,7 @@ namespace GroomingSalonRegistrationApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(439, 262);
             this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.updateBtn);
@@ -150,6 +151,7 @@ namespace GroomingSalonRegistrationApp
             this.Controls.Add(this.custListBoxLabel);
             this.Controls.Add(this.petComboBox);
             this.Controls.Add(this.custListBox);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.ShowInTaskbar = false;
