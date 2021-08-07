@@ -129,6 +129,8 @@ namespace GroomingSalonRegistrationApp
             // 
             // errorAddCustTxt
             // 
+            this.errorAddCustTxt.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.errorAddCustTxt.Enabled = false;
             this.errorAddCustTxt.Location = new System.Drawing.Point(127, 145);
             this.errorAddCustTxt.Name = "errorAddCustTxt";
             this.errorAddCustTxt.Size = new System.Drawing.Size(232, 20);
@@ -140,7 +142,7 @@ namespace GroomingSalonRegistrationApp
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ClientSize = new System.Drawing.Size(408, 248);
+            this.ClientSize = new System.Drawing.Size(408, 231);
             this.Controls.Add(this.errorAddCustTxt);
             this.Controls.Add(this.addCustCancelBtn);
             this.Controls.Add(this.addCustSubmitBtn);

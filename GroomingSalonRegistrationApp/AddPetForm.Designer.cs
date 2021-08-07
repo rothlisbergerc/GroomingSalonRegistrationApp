@@ -91,7 +91,7 @@ namespace GroomingSalonRegistrationApp
             // 
             // addPetSubmitBtn
             // 
-            this.addPetSubmitBtn.Location = new System.Drawing.Point(112, 139);
+            this.addPetSubmitBtn.Location = new System.Drawing.Point(112, 148);
             this.addPetSubmitBtn.Name = "addPetSubmitBtn";
             this.addPetSubmitBtn.Size = new System.Drawing.Size(108, 38);
             this.addPetSubmitBtn.TabIndex = 6;
@@ -101,7 +101,7 @@ namespace GroomingSalonRegistrationApp
             // 
             // addPetCancelBtn
             // 
-            this.addPetCancelBtn.Location = new System.Drawing.Point(249, 139);
+            this.addPetCancelBtn.Location = new System.Drawing.Point(249, 148);
             this.addPetCancelBtn.Name = "addPetCancelBtn";
             this.addPetCancelBtn.Size = new System.Drawing.Size(108, 38);
             this.addPetCancelBtn.TabIndex = 7;
@@ -111,7 +111,9 @@ namespace GroomingSalonRegistrationApp
             // 
             // errorAddPetTxt
             // 
-            this.errorAddPetTxt.Location = new System.Drawing.Point(112, 113);
+            this.errorAddPetTxt.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.errorAddPetTxt.Enabled = false;
+            this.errorAddPetTxt.Location = new System.Drawing.Point(112, 122);
             this.errorAddPetTxt.Name = "errorAddPetTxt";
             this.errorAddPetTxt.Size = new System.Drawing.Size(245, 20);
             this.errorAddPetTxt.TabIndex = 8;
@@ -122,7 +124,7 @@ namespace GroomingSalonRegistrationApp
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ClientSize = new System.Drawing.Size(405, 206);
+            this.ClientSize = new System.Drawing.Size(405, 220);
             this.Controls.Add(this.errorAddPetTxt);
             this.Controls.Add(this.addPetCancelBtn);
             this.Controls.Add(this.addPetSubmitBtn);
