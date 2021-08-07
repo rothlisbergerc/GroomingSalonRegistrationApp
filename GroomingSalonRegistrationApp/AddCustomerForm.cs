@@ -93,6 +93,11 @@ namespace GroomingSalonRegistrationApp
                 MessageBox.Show("You need to add a phone number");
                 return false;
             }
+            else if(!Int32.TryParse(custPhoneTxt.Text,out _))
+            {
+                MessageBox.Show("Phone number needs to consist of numbers only");
+                return false;
+            }
             else if(String.IsNullOrEmpty(custAddressTxt.Text))
             {
                 MessageBox.Show("You need to have a home address");
