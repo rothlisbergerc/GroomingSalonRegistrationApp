@@ -39,24 +39,28 @@ namespace GroomingSalonRegistrationApp
 
         private void addPetSubmitBtn_Click(object sender, EventArgs e)
         {
+            Pet p = new Pet();
             if (exisitingPet == null)
             {
-                Pet p = new Pet()
+                if (validatePet(p))
                 {
-                    Age = float.Parse(petAgeTxt.Text),
-                    Breed = petBreedTxt.Text,
-                    Name = petNameTxt.Text
-                };
-                SalonDb.Add(p);
-                cleanTextBoxes();
+                    p.Age = float.Parse(petAgeTxt.Text);
+                    p.Breed = petBreedTxt.Text;
+                    p.Name = petNameTxt.Text;
+                    SalonDb.Add(p);
+                    cleanTextBoxes();
+                }
             }
             else
             {
-                exisitingPet.Age = float.Parse(petAgeTxt.Text);
-                exisitingPet.Breed = petBreedTxt.Text;
-                exisitingPet.Name = petNameTxt.Text;
-                SalonDb.UpdatePet(exisitingPet);
-                cleanTextBoxes();
+                if (validatePet(p))
+                {
+                    exisitingPet.Age = float.Parse(petAgeTxt.Text);
+                    exisitingPet.Breed = petBreedTxt.Text;
+                    exisitingPet.Name = petNameTxt.Text;
+                    SalonDb.UpdatePet(exisitingPet);
+                    cleanTextBoxes();
+                }
             }
         }
 
@@ -66,6 +70,34 @@ namespace GroomingSalonRegistrationApp
             if (result == DialogResult.Yes)
             {
                 Close();
+            }
+        }
+
+        private bool validatePet(Pet p)
+        {
+            if (String.IsNullOrEmpty(petNameTxt.Text))
+            {
+                MessageBox.Show("Every pet has a name");
+                return false;
+            }
+            else if (String.IsNullOrEmpty(petBreedTxt.Text))
+            {
+                MessageBox.Show("Need a pet breed");
+                return false;
+            }
+            else if (String.IsNullOrEmpty(petAgeTxt.Text))
+            {
+                MessageBox.Show("Your pet is at least some age.");
+                return false;
+            }
+            else if(!Int32.TryParse(petAgeTxt.Text, out _))
+            {
+                MessageBox.Show("Pet age needs to be a number");
+                return false;
+            }
+            else
+            {
+                return true;
             }
         }
     }
