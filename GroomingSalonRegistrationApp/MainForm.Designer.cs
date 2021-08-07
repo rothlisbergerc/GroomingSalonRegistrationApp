@@ -29,6 +29,7 @@ namespace GroomingSalonRegistrationApp
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.custListBox = new System.Windows.Forms.ListBox();
             this.petComboBox = new System.Windows.Forms.ComboBox();
             this.custListBoxLabel = new System.Windows.Forms.Label();
@@ -149,7 +150,10 @@ namespace GroomingSalonRegistrationApp
             this.Controls.Add(this.custListBoxLabel);
             this.Controls.Add(this.petComboBox);
             this.Controls.Add(this.custListBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Grooming Salon Registration";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
