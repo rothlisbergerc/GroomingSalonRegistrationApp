@@ -32,26 +32,30 @@ namespace GroomingSalonRegistrationApp
 
         private void addCustSubmitBtn_Click(object sender, EventArgs e)
         {
+            Customer c = new Customer();
             if (existingCust == null)
             {
-                Customer c = new Customer
+                if (validateCustomer(c))
                 {
-                    FirstName = custFirstNameTxt.Text,
-                    LastName = custLastNameTxt.Text,
-                    PhoneNumber = custPhoneTxt.Text,
-                    HomeAddress = custAddressTxt.Text
-                };
-                SalonDb.Add(c);
-                cleanTextBoxes();
+                    c.FirstName = custFirstNameTxt.Text;
+                    c.LastName = custLastNameTxt.Text;
+                    c.PhoneNumber = custPhoneTxt.Text;
+                    c.HomeAddress = custAddressTxt.Text;
+                    SalonDb.Add(c);
+                    cleanTextBoxes();
+                }
             }
             else
             {
-                existingCust.FirstName = custFirstNameTxt.Text;
-                existingCust.LastName = custLastNameTxt.Text;
-                existingCust.HomeAddress = custAddressTxt.Text;
-                existingCust.PhoneNumber = custPhoneTxt.Text;
-                SalonDb.UpdateCust(existingCust);
-                cleanTextBoxes();
+                if (validateCustomer(c))
+                {
+                    existingCust.FirstName = custFirstNameTxt.Text;
+                    existingCust.LastName = custLastNameTxt.Text;
+                    existingCust.HomeAddress = custAddressTxt.Text;
+                    existingCust.PhoneNumber = custPhoneTxt.Text;
+                    SalonDb.UpdateCust(existingCust);
+                    cleanTextBoxes();
+                }
             }
         }
 
@@ -69,6 +73,39 @@ namespace GroomingSalonRegistrationApp
             if (result == DialogResult.Yes)
             {
                 Close();
+            }
+        }
+
+        private bool validateCustomer(Customer c)
+        {
+            if(String.IsNullOrEmpty(custFirstNameTxt.Text))
+            {
+                MessageBox.Show("Cannot be missing a first name");
+                return false;
+            }
+            else if(String.IsNullOrEmpty(custLastNameTxt.Text))
+            {
+                MessageBox.Show("Cannot be missing a last name");
+                return false;
+            }
+            else if(String.IsNullOrEmpty(custPhoneTxt.Text))
+            {
+                MessageBox.Show("You need to add a phone number");
+                return false;
+            }
+            else if(!Int32.TryParse(custPhoneTxt.Text,out _))
+            {
+                MessageBox.Show("Phone number needs to consist of numbers only");
+                return false;
+            }
+            else if(String.IsNullOrEmpty(custAddressTxt.Text))
+            {
+                MessageBox.Show("You need to have a home address");
+                return false;
+            }
+            else
+            {
+                return true;
             }
         }
     }
