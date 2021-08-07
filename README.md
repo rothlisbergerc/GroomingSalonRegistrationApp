@@ -1,6 +1,9 @@
 # Grooming Salon Registration Application
 This application will register new customers and their pets into a grooming salon database with full CRUD functionality.
 
+![GroomingSalonRegistrationApp_MainFormScreenShot_8-7-21](https://user-images.githubusercontent.com/77075506/128613653-05c29bf4-21fa-4d71-8377-e10df9b9ba0d.png)
+
+
 ### The information collected for a single customer using this application will include:
 - First and last name
 - Phone number
