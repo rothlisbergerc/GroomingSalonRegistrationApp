@@ -29,6 +29,7 @@ namespace GroomingSalonRegistrationApp
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddPetForm));
             this.petNameLabel = new System.Windows.Forms.Label();
             this.petBreedLabel = new System.Windows.Forms.Label();
             this.petAgeLabel = new System.Windows.Forms.Label();
@@ -112,6 +113,7 @@ namespace GroomingSalonRegistrationApp
             this.AcceptButton = this.addPetSubmitBtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(405, 177);
             this.Controls.Add(this.addPetCancelBtn);
             this.Controls.Add(this.addPetSubmitBtn);
@@ -121,7 +123,10 @@ namespace GroomingSalonRegistrationApp
             this.Controls.Add(this.petAgeLabel);
             this.Controls.Add(this.petBreedLabel);
             this.Controls.Add(this.petNameLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddPetForm";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Pet";
             this.ResumeLayout(false);
             this.PerformLayout();

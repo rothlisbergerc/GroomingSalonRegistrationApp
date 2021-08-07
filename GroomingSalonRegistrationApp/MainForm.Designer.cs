@@ -29,6 +29,7 @@ namespace GroomingSalonRegistrationApp
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.custListBox = new System.Windows.Forms.ListBox();
             this.petComboBox = new System.Windows.Forms.ComboBox();
             this.custListBoxLabel = new System.Windows.Forms.Label();
@@ -41,10 +42,11 @@ namespace GroomingSalonRegistrationApp
             // 
             // custListBox
             // 
+            this.custListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.custListBox.FormattingEnabled = true;
             this.custListBox.Location = new System.Drawing.Point(26, 43);
             this.custListBox.Name = "custListBox";
-            this.custListBox.Size = new System.Drawing.Size(206, 121);
+            this.custListBox.Size = new System.Drawing.Size(206, 119);
             this.custListBox.TabIndex = 0;
             this.custListBox.SelectedIndexChanged += new System.EventHandler(this.custListBox_SelectedIndexChanged);
             // 
@@ -107,7 +109,7 @@ namespace GroomingSalonRegistrationApp
             // 
             // addPetBtn
             // 
-            this.addPetBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.addPetBtn.BackColor = System.Drawing.Color.PaleTurquoise;
             this.addPetBtn.FlatAppearance.BorderSize = 0;
             this.addPetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addPetBtn.Image = global::GroomingSalonRegistrationApp.Properties.Resources.pawPrintButtonImage;
@@ -140,6 +142,7 @@ namespace GroomingSalonRegistrationApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(439, 262);
             this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.updateBtn);
@@ -149,7 +152,12 @@ namespace GroomingSalonRegistrationApp
             this.Controls.Add(this.custListBoxLabel);
             this.Controls.Add(this.petComboBox);
             this.Controls.Add(this.custListBox);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
+            this.Opacity = 0.95D;
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Grooming Salon Registration";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);

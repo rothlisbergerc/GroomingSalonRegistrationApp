@@ -29,6 +29,7 @@ namespace GroomingSalonRegistrationApp
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateCustomerForm));
             this.updateCustSubmitBtn = new System.Windows.Forms.Button();
             this.updateCustCancelBtn = new System.Windows.Forms.Button();
             this.updateFirstNameLabel = new System.Windows.Forms.Label();
@@ -128,6 +129,7 @@ namespace GroomingSalonRegistrationApp
             this.AcceptButton = this.updateCustSubmitBtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(445, 201);
             this.Controls.Add(this.updateAddressTxt);
             this.Controls.Add(this.updatePhoneTxt);
@@ -139,7 +141,10 @@ namespace GroomingSalonRegistrationApp
             this.Controls.Add(this.updateFirstNameLabel);
             this.Controls.Add(this.updateCustCancelBtn);
             this.Controls.Add(this.updateCustSubmitBtn);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UpdateCustomerForm";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Update Customer";
             this.ResumeLayout(false);
             this.PerformLayout();

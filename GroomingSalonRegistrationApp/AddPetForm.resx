@@ -117,4 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAADdoxtF3aMbiN2jG4Xdoxs8AAAAAAAAAADdoxtU3aMbf92jG4LdoxtPAAAAAAAA
+        AAAAAAAAAAAAAAAAAADdoxtw3aMb/92jG//doxv/3aMb/92jG6Hdoxu33aMb/92jG//doxv/3aMb/92j
+        G5IAAAAAAAAAAAAAAADdoxsl3aMb/92jG//doxv/3aMb/92jG//doxv/3aMb/92jG//doxv/3aMb/92j
+        G//doxv/3aMbPwAAAAAAAAAA3aMbbN2jG//doxv/3aMb/92jG//doxv/3aMb/92jG//doxv+3aMb/t2j
+        G//doxv/3aMb/92jG5IAAAAAAAAAAN2jGzvdoxv/3aMb/92jG//doxv/3aMb/92jG/7doxv+3aMb/t2j
+        G/7doxv/3aMb/92jG//doxt3AAAAAAAAAAAAAAAA3aMb092jG//doxv/3aMb/92jG//doxv+3aMb/92j
+        G//doxv/3aMb/92jG//doxvz3aMbFwAAAAAAAAAAAAAAAN2jGxjdoxv53aMb/92jG//doxv/3aMb/t2j
+        G/7doxv/3aMb/92jG//doxv/3aMbPAAAAAAAAAAA3aMbVd2jG8Ldoxs93aMbK92jG+zdoxv/3aMb/92j
+        G//doxv+3aMb/t2jG//doxv/3aMbaAAAAADdoxsPAAAAAN2jG/Ldoxv/3aMb/92jGxvdoxsa3aMbl92j
+        G//doxv/3aMb/92jG//doxvf3aMbcd2jGxbdoxve3aMb4N2jGyLdoxv/3aMb/92jG//doxtcAAAAAAAA
+        AADdoxsc3aMbjd2jG53doxswAAAAAAAAAADdoxvk3aMb/92jG//doxu13aMbsN2jG//doxvk3aMbRN2j
+        G6ndoxvT3aMbYwAAAAAAAAAA3aMbXN2jG3/doxsp3aMb/92jG//doxv/3aMb/92jGwfdoxte3aMbJ92j
+        G83doxv/3aMb/92jG//doxsi3aMbS92jG//doxv/3aMbwN2jG4ndoxv/3aMb/92jG9IAAAAAAAAAAAAA
+        AADdoxv/3aMb/92jG//doxv/3aMbkd2jG87doxv/3aMb/92jG//doxtY3aMbVt2jG93doxtNAAAAAAAA
+        AADdoxsI3aMb+92jG//doxv/3aMb/92jG0rdoxvb3aMb/92jG//doxv/3aMbdgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAN2jG33doxv/3aMb/92jG5kAAAAA3aMbX92jG//doxv/3aMb8N2jGyEAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA3aMbX92jG1kAAAAAAAAAAAAAAADdoxtB3aMbct2jGyYAAAAAAAAAAAAA
+        AAAAAAAA4YcAAMADAACAAQAAgAEAAIABAADAAQAAwAMAAAAFAAAAAAAADDAAAAGAAAAAAAAA4AAAAMAH
+        AADhBwAA848AAA==
+</value>
+  </data>
 </root>
