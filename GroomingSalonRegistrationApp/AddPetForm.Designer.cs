@@ -38,6 +38,7 @@ namespace GroomingSalonRegistrationApp
             this.petAgeTxt = new System.Windows.Forms.TextBox();
             this.addPetSubmitBtn = new System.Windows.Forms.Button();
             this.addPetCancelBtn = new System.Windows.Forms.Button();
+            this.errorAddPetTxt = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // petNameLabel
@@ -90,7 +91,7 @@ namespace GroomingSalonRegistrationApp
             // 
             // addPetSubmitBtn
             // 
-            this.addPetSubmitBtn.Location = new System.Drawing.Point(112, 113);
+            this.addPetSubmitBtn.Location = new System.Drawing.Point(112, 139);
             this.addPetSubmitBtn.Name = "addPetSubmitBtn";
             this.addPetSubmitBtn.Size = new System.Drawing.Size(108, 38);
             this.addPetSubmitBtn.TabIndex = 6;
@@ -100,7 +101,7 @@ namespace GroomingSalonRegistrationApp
             // 
             // addPetCancelBtn
             // 
-            this.addPetCancelBtn.Location = new System.Drawing.Point(249, 113);
+            this.addPetCancelBtn.Location = new System.Drawing.Point(249, 139);
             this.addPetCancelBtn.Name = "addPetCancelBtn";
             this.addPetCancelBtn.Size = new System.Drawing.Size(108, 38);
             this.addPetCancelBtn.TabIndex = 7;
@@ -108,13 +109,21 @@ namespace GroomingSalonRegistrationApp
             this.addPetCancelBtn.UseVisualStyleBackColor = true;
             this.addPetCancelBtn.Click += new System.EventHandler(this.addPetCancelBtn_Click);
             // 
+            // errorAddPetTxt
+            // 
+            this.errorAddPetTxt.Location = new System.Drawing.Point(112, 113);
+            this.errorAddPetTxt.Name = "errorAddPetTxt";
+            this.errorAddPetTxt.Size = new System.Drawing.Size(245, 20);
+            this.errorAddPetTxt.TabIndex = 8;
+            // 
             // AddPetForm
             // 
             this.AcceptButton = this.addPetSubmitBtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ClientSize = new System.Drawing.Size(405, 177);
+            this.ClientSize = new System.Drawing.Size(405, 206);
+            this.Controls.Add(this.errorAddPetTxt);
             this.Controls.Add(this.addPetCancelBtn);
             this.Controls.Add(this.addPetSubmitBtn);
             this.Controls.Add(this.petAgeTxt);
@@ -143,5 +152,6 @@ namespace GroomingSalonRegistrationApp
         private System.Windows.Forms.TextBox petAgeTxt;
         private System.Windows.Forms.Button addPetSubmitBtn;
         private System.Windows.Forms.Button addPetCancelBtn;
+        private System.Windows.Forms.TextBox errorAddPetTxt;
     }
 }
