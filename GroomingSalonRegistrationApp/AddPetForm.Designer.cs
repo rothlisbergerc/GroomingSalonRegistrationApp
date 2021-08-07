@@ -113,6 +113,7 @@ namespace GroomingSalonRegistrationApp
             // 
             this.errorAddPetTxt.BackColor = System.Drawing.Color.PaleTurquoise;
             this.errorAddPetTxt.Enabled = false;
+            this.errorAddPetTxt.ForeColor = System.Drawing.Color.Red;
             this.errorAddPetTxt.Location = new System.Drawing.Point(112, 122);
             this.errorAddPetTxt.Name = "errorAddPetTxt";
             this.errorAddPetTxt.Size = new System.Drawing.Size(245, 20);

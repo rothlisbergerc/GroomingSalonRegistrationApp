@@ -131,6 +131,7 @@ namespace GroomingSalonRegistrationApp
             // 
             this.errorAddCustTxt.BackColor = System.Drawing.Color.PaleTurquoise;
             this.errorAddCustTxt.Enabled = false;
+            this.errorAddCustTxt.ForeColor = System.Drawing.Color.Red;
             this.errorAddCustTxt.Location = new System.Drawing.Point(127, 145);
             this.errorAddCustTxt.Name = "errorAddCustTxt";
             this.errorAddCustTxt.Size = new System.Drawing.Size(232, 20);
