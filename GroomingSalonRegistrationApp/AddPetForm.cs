@@ -77,28 +77,34 @@ namespace GroomingSalonRegistrationApp
         {
             if (String.IsNullOrEmpty(petNameTxt.Text))
             {
-                MessageBox.Show("Every pet has a name");
+                errorAddPetLbl.Text = "Every pet has a name";
                 return false;
             }
             else if (String.IsNullOrEmpty(petBreedTxt.Text))
             {
-                MessageBox.Show("Need a pet breed");
+                errorAddPetLbl.Text = "Need a pet breed";
                 return false;
             }
             else if (String.IsNullOrEmpty(petAgeTxt.Text))
             {
-                MessageBox.Show("Your pet is at least some age.");
+                errorAddPetLbl.Text = "Your pet is at least some age.";
                 return false;
             }
             else if(!Int32.TryParse(petAgeTxt.Text, out _))
             {
-                MessageBox.Show("Pet age needs to be a number");
+                errorAddPetLbl.Text = "Pet age needs to be a number";
                 return false;
             }
             else
             {
+                errorAddPetLbl.Text = "";
                 return true;
             }
+        }
+
+        private void AddPetForm_Load(object sender, EventArgs e)
+        {
+            errorAddPetLbl.Text = "";
         }
     }
 }

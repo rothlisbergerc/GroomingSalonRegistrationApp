@@ -80,33 +80,39 @@ namespace GroomingSalonRegistrationApp
         {
             if(String.IsNullOrEmpty(custFirstNameTxt.Text))
             {
-                MessageBox.Show("Cannot be missing a first name");
+                errorAddCustLbl.Text = "Cannot be missing a first name";
                 return false;
             }
             else if(String.IsNullOrEmpty(custLastNameTxt.Text))
             {
-                MessageBox.Show("Cannot be missing a last name");
+                errorAddCustLbl.Text = "Cannot be missing a last name";
                 return false;
             }
             else if(String.IsNullOrEmpty(custPhoneTxt.Text))
             {
-                MessageBox.Show("You need to add a phone number");
+                errorAddCustLbl.Text = "You need to add a phone number";
                 return false;
             }
             else if(!Int32.TryParse(custPhoneTxt.Text,out _))
             {
-                MessageBox.Show("Phone number needs to consist of numbers only");
+                errorAddCustLbl.Text = "Phone number needs to consist of numbers only";
                 return false;
             }
             else if(String.IsNullOrEmpty(custAddressTxt.Text))
             {
-                MessageBox.Show("You need to have a home address");
+                errorAddCustLbl.Text = "You need to have a home address";
                 return false;
             }
             else
             {
+                errorAddCustLbl.Text = "";
                 return true;
             }
+        }
+
+        private void AddCustomerForm_Load(object sender, EventArgs e)
+        {
+            errorAddCustLbl.Text = "";
         }
     }
 }
