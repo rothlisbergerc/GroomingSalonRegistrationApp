@@ -19,5 +19,3 @@ This application will register new customers and their pets into a grooming salo
 ### Authors
 - Ryder Deback
 - Cheryl Rothlisberger
-
-### License
